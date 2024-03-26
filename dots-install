@@ -1,0 +1,18 @@
+
+sudo apt install git curl tar xz-utils unzip
+sudo zypper install git curl tar xz-utils unzip
+git clone https://github.com/357jj/Dots1
+sudo cp ~/Dots1/config ~/.config/i3/config
+mkdir ~/.config/dunst
+mv ~/Dots1/dunstrc ~/.config/dunst
+mv ~/Dots1/goat.jpg ~
+cp ~/Dots1/kitty.conf ~/.config/kitty/kitty.conf
+curl -sS https://starship.rs/install.sh | sh
+echo eval "$(starship init bash)" > ~/.bashrc
+mv ~/Dots1/starship.toml ~/.config
+sudo apt install fish
+sudo zypper install fish
+chsh -s /usr/bin/fish
+cp ~/Dots1/config.fish ~/.config/fish/config.fish
+sudo apt install feh
+sudo zypper install feh
